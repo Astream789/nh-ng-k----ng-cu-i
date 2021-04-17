@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tổng 2 số nguyên</title>
+</head>
+<body>
+<h1>phép cộng 2 số nguyên đơn giản </h1>
+<input id= "so_1" type="number"/>
+<input id= "so_2" type="number"/>
+<br/>
+
+<Button onclick="cong()">thực hiện phép cộng</Button>
+
+<p id="ket_qua">kết quả: 0</p>
+
+<script>
+
+function cong() {
+    let num_1= +document.getElementById("so_1").value;
+    let num_2= +document.getElementById("so_2").value;
+
+    let result = num_1 + num_2;
+
+    document.getElementById("ket_qua").innerHTML = "kết quả: " + result;
+}
+    
+</script>
+
+    
+</body>
+</html>
